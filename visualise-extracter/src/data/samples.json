@@ -1,0 +1,1050 @@
+[
+  {
+    "book_tag": "ogvr-24-25",
+    "book_pdf": "GMAT verbal review 24-25.pdf",
+    "global_number": 16,
+    "search_hint": "16.",
+    "stem_was_rewritten": true,
+    "has_roman_options": false,
+    "question": {
+      "id": "q_50683f9579eb",
+      "passage_id": "p_a710477e8d09",
+      "position_in_passage": 6,
+      "book_question_number": 16,
+      "question_text": "The author implies which of the following about the ability of the researchers mentioned in paragraph 1 to predict earthquakes?",
+      "question_text_verbatim": "The author implies which of the following about the ability of the researchers mentioned in line 17 to predict earthquakes?",
+      "roman_options": null,
+      "choices": {
+        "A": "They can identify when an earthquake is likely to occur but not how large it will be.",
+        "B": "They can identify the regions where earthquakes are likely to occur but not when they will occur.",
+        "C": "They are unable to determine either the time or the place that earthquakes are likely to occur.",
+        "D": "They are likely to be more accurate at short-term earthquake prediction than at long- term earthquake prediction.",
+        "E": "They can determine the regions where earthquakes have occurred in the past but not the regions where they are likely to occur in the future."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "summary": "The question asks for information explicitly provided in the passage. The second paragraph indicates that researchers at first reported success in identifying earthquake precursors, but further analysis of the data undermined their theory. The passage then explains that atypical seismic waves were recorded before some earthquakes; this evidence at first seemed to support the researchers’ theory, before further analysis proved the evidence inadequate.",
+        "A": "Although earthquakes are caused by stress on rock, the passage does not indicate that this fact encouraged researchers to believe that precursors could be used to predict earthquakes.",
+        "B": "This fact would undermine the theory that changes in seismic waves are precursory phenomena that can be used to predict earthquakes.",
+        "C": "Correct. Seismic waves with unusual velocities occurring before earthquakes at first seemed to provide support for researchers’ theory that earthquakes could be predicted by precursory phenomena.",
+        "D": "Though earthquakes’ recurrence in certain regions is mentioned as being important to researchers seeking to make long-term earthquake predictions, it is not mentioned as being relevant to researchers’ theory that earthquakes can be predicted by precursory phenomena.",
+        "E": "This is not mentioned as being relevant to scientists’ belief that earthquakes could be predicted on the basis of precursory phenomena."
+      },
+      "tags": [
+        "ogvr-24-25",
+        "reading_comprehension",
+        "easy",
+        "supporting_idea"
+      ],
+      "source": {
+        "book": "ogvr-24-25",
+        "page": 1
+      }
+    },
+    "passage": {
+      "id": "p_a710477e8d09",
+      "paragraphs": [
+        "In 1971 researchers hoping to predict earthquakes in the short term by identifying precursory phenomena (those that occur a few days before large quakes but not otherwise) turned their attention to changes in seismic waves that had been detected prior to earthquakes. An explanation for such changes was offered by “dilatancy theory,” based on a well-known phenomenon observed in rocks in the laboratory: as stress builds, microfractures in rock close, decreasing the rock’s volume. But as stress continues to increase, the rock begins to crack and expand in volume, allowing groundwater to seep in, weakening the rock. According to this theory, such effects could lead to several precursory phenomena in the field, including a change in the velocity of seismic waves, and an increase in small, nearby tremors.",
+        "Researchers initially reported success in identifying these possible precursors, but subsequent analyses of their data proved disheartening. Seismic waves with unusual velocities were recorded before some earthquakes, but while the historical record confirms that most large earthquakes are preceded by minor tremors, these foreshocks indicate nothing about the magnitude of an impending quake and are indistinguishable from other minor tremors that occur without large earthquakes.",
+        "In the 1980s, some researchers turned their efforts from short-term to long-term prediction.",
+        "Noting that earthquakes tend to occur repeatedly in certain regions, Lindh and Baker attempted to identify patterns of recurrence, or earthquake cycles, on which to base predictions. In a study of earthquake-prone sites along the San Andreas Fault, they determined that quakes occurred at intervals of approximately 22 years near one site and concluded that there was a 95 percent probability of an earthquake in that area by 1992. The earthquake did not occur within the time frame predicted, however.",
+        "Evidence against the kind of regular earthquake cycles that Lindh and Baker tried to establish has come from a relatively new field, paleoseismology. Paleoseismologists have unearthed and dated geological features such as fault scarps that were caused by earthquakes thousands of years ago. They have determined that the average interval between ten earthquakes that took place at one site along the",
+        "San Andreas Fault in the past two millennia was 132 years, but individual intervals ranged greatly, from 44 to 332 years."
+      ],
+      "intro_note": null,
+      "line_to_paragraph": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 2,
+        "21": 2,
+        "22": 2,
+        "23": 2,
+        "24": 2,
+        "25": 2,
+        "26": 2,
+        "27": 2,
+        "28": 2,
+        "29": 2,
+        "30": 4,
+        "31": 4,
+        "32": 4,
+        "33": 4,
+        "34": 4,
+        "35": 4,
+        "36": 4,
+        "37": 4,
+        "38": 4,
+        "39": 4,
+        "40": 5,
+        "41": 5,
+        "42": 5,
+        "43": 5,
+        "44": 5,
+        "45": 5,
+        "46": 5,
+        "47": 5,
+        "48": 5,
+        "49": 5,
+        "50": 6,
+        "51": 6,
+        "52": 6,
+        "53": 6,
+        "54": 6
+      },
+      "tags": [
+        "ogvr-24-25",
+        "easy"
+      ],
+      "sources": [
+        {
+          "book": "ogvr-24-25",
+          "page": 1,
+          "passage_index_in_book": 3
+        }
+      ]
+    }
+  },
+  {
+    "book_tag": "ogvr-24-25",
+    "book_pdf": "GMAT verbal review 24-25.pdf",
+    "global_number": 15,
+    "search_hint": "15.",
+    "stem_was_rewritten": true,
+    "has_roman_options": false,
+    "question": {
+      "id": "q_f46237e25eb8",
+      "passage_id": "p_a710477e8d09",
+      "position_in_passage": 5,
+      "book_question_number": 15,
+      "question_text": "The passage suggests which of the following about the paleoseismologists’ findings described in paragraphs 5–6?",
+      "question_text_verbatim": "The passage suggests which of the following about the paleoseismologists’ findings described in lines 42–50?",
+      "roman_options": null,
+      "choices": {
+        "A": "They suggest that the frequency with which earthquakes occurred at a particular site decreased significantly over the past two millennia.",
+        "B": "They suggest that paleoseismologists may someday be able to make reasonably accurate long-term earthquake predictions.",
+        "C": "They suggest that researchers may someday be able to determine which past occurrences of minor tremors were actually followed by large earthquakes.",
+        "D": "They suggest that the recurrence of earthquakes in earthquake-prone sites is too irregular to serve as a basis for earthquake prediction.",
+        "E": "They indicate that researchers attempting to develop long-term methods of earthquake prediction have overlooked important evidence concerning the causes of earthquakes."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "summary": "This question asks about what can be inferred from a particular portion of the passage (lines 42–50). The third paragraph describes research that attempted to identify regular patterns of recurrence in earthquake-prone regions, to aid in long-term earthquake prediction. The fourth paragraph describes evidence discovered by paleoseismologists that undermines this idea that regular earthquake cycles exist. The paragraph indicates that in one region along the San Andreas Fault, the average interval between earthquakes was 132 years, but individual intervals varied widely—from 44 to 332 years. This information implies that earthquake intervals are too irregular to be used for accurate long-term earthquake prediction.",
+        "A": "The evidence suggests that the earthquake intervals are irregular, not that they have become shorter over time.",
+        "B": "The findings provide evidence against the use of regular earthquake cycles in long-term earthquake prediction.",
+        "C": "The findings do not clearly pertain to minor tremors.",
+        "D": "Correct. The great variation in intervals between earthquakes suggests that recurrence is too irregular to serve as the basis for long-term earthquake prediction.",
+        "E": "The paleoseismologists studied evidence showing when earthquakes occurred. The passage does not suggest that the evidence has any implications regarding the causes of earthquakes."
+      },
+      "tags": [
+        "ogvr-24-25",
+        "reading_comprehension",
+        "easy",
+        "inference"
+      ],
+      "source": {
+        "book": "ogvr-24-25",
+        "page": 1
+      }
+    },
+    "passage": {
+      "id": "p_a710477e8d09",
+      "paragraphs": [
+        "In 1971 researchers hoping to predict earthquakes in the short term by identifying precursory phenomena (those that occur a few days before large quakes but not otherwise) turned their attention to changes in seismic waves that had been detected prior to earthquakes. An explanation for such changes was offered by “dilatancy theory,” based on a well-known phenomenon observed in rocks in the laboratory: as stress builds, microfractures in rock close, decreasing the rock’s volume. But as stress continues to increase, the rock begins to crack and expand in volume, allowing groundwater to seep in, weakening the rock. According to this theory, such effects could lead to several precursory phenomena in the field, including a change in the velocity of seismic waves, and an increase in small, nearby tremors.",
+        "Researchers initially reported success in identifying these possible precursors, but subsequent analyses of their data proved disheartening. Seismic waves with unusual velocities were recorded before some earthquakes, but while the historical record confirms that most large earthquakes are preceded by minor tremors, these foreshocks indicate nothing about the magnitude of an impending quake and are indistinguishable from other minor tremors that occur without large earthquakes.",
+        "In the 1980s, some researchers turned their efforts from short-term to long-term prediction.",
+        "Noting that earthquakes tend to occur repeatedly in certain regions, Lindh and Baker attempted to identify patterns of recurrence, or earthquake cycles, on which to base predictions. In a study of earthquake-prone sites along the San Andreas Fault, they determined that quakes occurred at intervals of approximately 22 years near one site and concluded that there was a 95 percent probability of an earthquake in that area by 1992. The earthquake did not occur within the time frame predicted, however.",
+        "Evidence against the kind of regular earthquake cycles that Lindh and Baker tried to establish has come from a relatively new field, paleoseismology. Paleoseismologists have unearthed and dated geological features such as fault scarps that were caused by earthquakes thousands of years ago. They have determined that the average interval between ten earthquakes that took place at one site along the",
+        "San Andreas Fault in the past two millennia was 132 years, but individual intervals ranged greatly, from 44 to 332 years."
+      ],
+      "intro_note": null,
+      "line_to_paragraph": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 2,
+        "21": 2,
+        "22": 2,
+        "23": 2,
+        "24": 2,
+        "25": 2,
+        "26": 2,
+        "27": 2,
+        "28": 2,
+        "29": 2,
+        "30": 4,
+        "31": 4,
+        "32": 4,
+        "33": 4,
+        "34": 4,
+        "35": 4,
+        "36": 4,
+        "37": 4,
+        "38": 4,
+        "39": 4,
+        "40": 5,
+        "41": 5,
+        "42": 5,
+        "43": 5,
+        "44": 5,
+        "45": 5,
+        "46": 5,
+        "47": 5,
+        "48": 5,
+        "49": 5,
+        "50": 6,
+        "51": 6,
+        "52": 6,
+        "53": 6,
+        "54": 6
+      },
+      "tags": [
+        "ogvr-24-25",
+        "easy"
+      ],
+      "sources": [
+        {
+          "book": "ogvr-24-25",
+          "page": 1,
+          "passage_index_in_book": 3
+        }
+      ]
+    }
+  },
+  {
+    "book_tag": "ogvr-24-25",
+    "book_pdf": "GMAT verbal review 24-25.pdf",
+    "global_number": 21,
+    "search_hint": "21.",
+    "stem_was_rewritten": true,
+    "has_roman_options": false,
+    "question": {
+      "id": "q_72d6d39d10d5",
+      "passage_id": "p_dfded5354c3b",
+      "position_in_passage": 5,
+      "book_question_number": 21,
+      "question_text": "Which of the following best describes the function of the sentence in paragraph 2 in the context of the passage as a whole?",
+      "question_text_verbatim": "Which of the following best describes the function of the sentence in lines 25–28 in the context of the passage as a whole?",
+      "roman_options": null,
+      "choices": {
+        "A": "It reiterates a distinction between two advertising strategies that is made in the first paragraph.",
+        "B": "It explains how a particular strategy avoids a drawback described earlier in the paragraph.",
+        "C": "It suggests that a risk described earlier in the paragraph is less serious than some researchers believe it to be.",
+        "D": "It outlines why the strategy described in the previous sentence involves certain risks for an advertiser.",
+        "E": "It introduces an argument that will be refuted in the following paragraph."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "summary": "The sentence in lines 25–28 explains how the kinds of conclusions consumers are invited to draw based on the soft-sell approach reduce the risk that consumers will respond with resentment, distrust, and counterargumentation—that is, the possible boomerang effect identified earlier in the paragraph as a drawback of the hard-sell approach.",
+        "A": "The sentence does not reiterate the distinction between the hard- and soft-sell approaches; rather, it explains an advantage of the soft-sell approach.",
+        "B": "Correct. The sentence explains how the soft-sell approach avoids the problems that can arise from the hard-sell approach’s explicitly stated conclusions.",
+        "C": "The sentence suggests that the risk of boomerang effects described earlier in the paragraph is serious but that a different approach can mitigate it.",
+        "D": "The sentence outlines why the strategy described in the previous sentence reduces advertisers’ risks, not why it involves risks.",
+        "E": "At no point does the passage refute the idea that implicit conclusions reduce the risk of boomerang effects. It does say that there could be drawbacks to the soft-sell approach, but those drawbacks are related to the problem with implicit conclusions themselves and how people reach them. In addition, the following paragraph does not mention the drawbacks, only the advantages of implicit conclusions."
+      },
+      "tags": [
+        "ogvr-24-25",
+        "reading_comprehension",
+        "easy",
+        "evaluation"
+      ],
+      "source": {
+        "book": "ogvr-24-25",
+        "page": 1
+      }
+    },
+    "passage": {
+      "id": "p_dfded5354c3b",
+      "paragraphs": [
+        "A key decision required of advertising managers is whether a “hard-sell” or “soft-sell” strategy is appropriate for a specific target market. The hard- sell approach involves the use of direct, forceful claims regarding the benefits of the advertised brand over competitors’ offerings. In contrast, the soft-sell approach involves the use of advertising claims that imply superiority more subtly.",
+        "One positive aspect of the hard-sell approach is its use of very simple and straightforward product claims presented as explicit conclusions, with little room for confusion regarding the advertiser’s message. However, some consumers may resent being told what to believe, and some may distrust the message. Resentment and distrust often lead to counterargumentation and to boomerang effects where consumers come to believe conclusions diametrically opposed to conclusions endorsed in advertising claims. By contrast, the risk of boomerang effects is greatly reduced with soft-sell approaches. One way to implement the soft-sell approach is to provide information that implies the main conclusions the advertiser wants the consumer to draw but leave the conclusions themselves unstated. Because consumers are invited to make up their own minds, implicit conclusions reduce the risk of resentment, distrust, and counterargumentation.",
+        "Recent research on consumer memory and judgment suggests another advantage of implicit conclusions. Beliefs or conclusions that are self- generated are more accessible from memory than beliefs from conclusions provided explicitly by other individuals and thus have a greater impact on judgment and decision making. Moreover, self- generated beliefs are often perceived as more accurate and valid than the beliefs of others, because other individuals may be perceived as less knowledgeable or may be perceived as manipulative or deliberately misleading.",
+        "Despite these advantages, implicit conclusions may not always be more effective than explicit conclusions. One risk is that some consumers may fail to draw their own conclusions and thus miss the point of the message. Inferential activity is likely only when consumers are motivated and able to engage in effortful cognitive processes. Another risk is that some consumers may draw conclusions other than the one intended. Even if inferential activity is likely, there is no guarantee that consumers will follow the path provided by the advertiser. Finally, a third risk is that consumers may infer the intended conclusion but question the validity of their inference."
+      ],
+      "intro_note": null,
+      "line_to_paragraph": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 2,
+        "11": 2,
+        "12": 2,
+        "13": 2,
+        "14": 2,
+        "15": 2,
+        "16": 2,
+        "17": 2,
+        "18": 2,
+        "19": 2,
+        "20": 2,
+        "21": 2,
+        "22": 2,
+        "23": 2,
+        "24": 2,
+        "25": 2,
+        "26": 2,
+        "27": 2,
+        "28": 2,
+        "29": 2,
+        "30": 3,
+        "31": 3,
+        "32": 3,
+        "33": 3,
+        "34": 3,
+        "35": 3,
+        "36": 3,
+        "37": 3,
+        "38": 3,
+        "39": 3,
+        "40": 3,
+        "41": 3,
+        "42": 3,
+        "43": 3,
+        "44": 3,
+        "45": 4,
+        "46": 4,
+        "47": 4,
+        "48": 4,
+        "49": 4,
+        "50": 4,
+        "51": 4,
+        "52": 4,
+        "53": 4,
+        "54": 4
+      },
+      "tags": [
+        "ogvr-24-25",
+        "easy"
+      ],
+      "sources": [
+        {
+          "book": "ogvr-24-25",
+          "page": 1,
+          "passage_index_in_book": 4
+        }
+      ]
+    }
+  },
+  {
+    "book_tag": "ogvr-24-25",
+    "book_pdf": "GMAT verbal review 24-25.pdf",
+    "global_number": 105,
+    "search_hint": "105.",
+    "stem_was_rewritten": false,
+    "has_roman_options": false,
+    "question": {
+      "id": "q_dcfc86293ae7",
+      "passage_id": "p_210f17056916",
+      "position_in_passage": 5,
+      "book_question_number": 105,
+      "question_text": "The author mentions the fact that baryons are the source of stars’ luminosity primarily in order to explain",
+      "question_text_verbatim": "The author mentions the fact that baryons are the source of stars’ luminosity primarily in order to explain",
+      "roman_options": null,
+      "choices": {
+        "A": "how astronomers determine that some galaxies contain fewer stars per unit volume than do others",
+        "B": "how astronomers are able to calculate the total luminosity of a galaxy",
+        "C": "why astronomers can use galactic luminosity to estimate baryonic mass",
+        "D": "why astronomers’ estimates of baryonic mass based on galactic luminosity are more reliable than those based on spectroscopic studies of helium",
+        "E": "how astronomers know bright galaxies contain more baryons than do dim galaxies"
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "summary": "This question requires understanding how one aspect of the passage relates to the reasoning in a larger portion of the passage. The second paragraph explains that scientists have been puzzled over missing baryonic mass in the universe as measured by luminosity (lines 21–25). Given that baryons are the source of luminosity in the galaxy (lines 17–19), astronomers can estimate the baryonic mass of a galaxy by measuring its luminosity.",
+        "A": "The passage discussion of baryons does not address the number of stars in individual galaxies.",
+        "B": "The passage discusses how the luminosity of galaxies can be used to estimate baryonic mass but does not address how total luminosity is measured.",
+        "C": "Correct. The passage indicates that because baryons are the source of galactic luminosity, measuring luminosity can be used to estimate baryonic mass of galaxies.",
+        "D": "The passage suggests that estimates based on luminosity may have been less accurate, not more accurate, than those based on spectroscopy.",
+        "E": "The passage does not indicate that bright galaxies contain more baryons than do dim galaxies."
+      },
+      "tags": [
+        "ogvr-24-25",
+        "reading_comprehension",
+        "hard",
+        "evaluation"
+      ],
+      "source": {
+        "book": "ogvr-24-25",
+        "page": 1
+      }
+    },
+    "passage": {
+      "id": "p_210f17056916",
+      "paragraphs": [
+        "In addition to conventional galaxies, the universe contains very dim galaxies that until recently went unnoticed by astronomers. Possibly as numerous as conventional galaxies, these galaxies have the same general shape and even the same approximate number of stars as a common type of conventional galaxy, the spiral, but tend to be much larger. Because these galaxies’ mass is spread out over larger areas, they have far fewer stars per unit volume than do conventional galaxies. Apparently these low-surface-brightness galaxies, as they are called, take much longer than conventional galaxies to condense their primordial gas and convert it to stars—that is, they evolve much more slowly. These galaxies may constitute an answer to the long-standing puzzle of the missing baryonic mass in the universe. Baryons—subatomic particles that are generally protons or neutrons—are the source of stellar, and therefore galactic, luminosity, and so their numbers can be estimated based on how luminous galaxies are. However, the amount of helium in the universe, as measured by spectroscopy, suggests that there are far more baryons in the universe than estimates based on galactic luminosity indicate. Astronomers have long speculated that the missing baryonic mass might eventually be discovered in intergalactic space or as some large population of galaxies that are difficult to detect."
+      ],
+      "intro_note": null,
+      "line_to_paragraph": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1
+      },
+      "tags": [
+        "ogvr-24-25",
+        "hard"
+      ],
+      "sources": [
+        {
+          "book": "ogvr-24-25",
+          "page": 1,
+          "passage_index_in_book": 21
+        }
+      ]
+    }
+  },
+  {
+    "book_tag": "ogvr-24-25",
+    "book_pdf": "GMAT verbal review 24-25.pdf",
+    "global_number": 112,
+    "search_hint": "112.",
+    "stem_was_rewritten": false,
+    "has_roman_options": false,
+    "question": {
+      "id": "q_1a70bcef8488",
+      "passage_id": "p_a64ba350816f",
+      "position_in_passage": 5,
+      "book_question_number": 112,
+      "question_text": "The discussion of the regional bank in the second paragraph serves which of the following functions within the passage as a whole?",
+      "question_text_verbatim": "The discussion of the regional bank in the second paragraph serves which of the following functions within the passage as a whole?",
+      "roman_options": null,
+      "choices": {
+        "A": "It describes an exceptional case in which investment in service actually failed to produce a competitive advantage.",
+        "B": "It illustrates the pitfalls of choosing to invest in service at a time when investment is needed more urgently in another area.",
+        "C": "It demonstrates the kind of analysis that managers apply when they choose one kind of service investment over another.",
+        "D": "It supports the argument that investments in certain aspects of service are more advantageous than investments in other aspects of service.",
+        "E": "It provides an example of the point about investment in service made in the first paragraph."
+      },
+      "correct_answer": "E",
+      "explanation": {
+        "summary": "This question requires thinking about what the second paragraph contributes to the whole passage. The first paragraph makes a generalization about investing in improvements in service; in certain conditions, such improvements do not result in the competitive advantage a company hopes for. The second paragraph offers the bank as an example of this generalization.",
+        "A": "The first sentence of the passage explains that improving service does not necessarily bring a competitive advantage, so the bank is not exceptional.",
+        "B": "The bank illustrates the pitfall of not evaluating a service improvement on the basis of tangible benefits; other areas of the bank are not mentioned.",
+        "C": "The passage does not discuss how managers analyze and choose different service investments.",
+        "D": "Investments in different aspects of service are not evaluated in the passage.",
+        "E": "Correct. The bank is an example of the position stated in the first paragraph that investing in improved service can be a waste if the investment is not evaluated carefully."
+      },
+      "tags": [
+        "ogvr-24-25",
+        "reading_comprehension",
+        "hard",
+        "logical_structure"
+      ],
+      "source": {
+        "book": "ogvr-24-25",
+        "page": 1
+      }
+    },
+    "passage": {
+      "id": "p_a64ba350816f",
+      "paragraphs": [
+        "The fact that superior service can generate a competitive advantage for a company does not mean that every attempt at improving service will create such an advantage. Investments in service, like those in production and distribution, must be balanced against other types of investments on the basis of direct, tangible benefits such as cost reduction and increased revenues. If a company is already effectively on a par with its competitors because it provides service that avoids a damaging reputation and keeps customers from leaving at an unacceptable rate, then investment in higher service levels may be wasted, since service is a deciding factor for customers only in extreme situations.",
+        "This truth was not apparent to managers of one regional bank, which failed to improve its competitive position despite its investment in reducing the time a customer had to wait for a teller. The bank managers did not recognize the level of customer inertia in the consumer banking industry that arises from the inconvenience of switching banks. Nor did they analyze their service improvement to determine whether it would attract new customers by producing a new standard of service that would excite customers or by proving difficult for competitors to copy. The only merit of the improvement was that it could easily be described to customers."
+      ],
+      "intro_note": null,
+      "line_to_paragraph": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 2,
+        "21": 2,
+        "22": 2,
+        "23": 2,
+        "24": 2,
+        "25": 2,
+        "26": 2,
+        "27": 2,
+        "28": 2,
+        "29": 2
+      },
+      "tags": [
+        "ogvr-24-25",
+        "hard"
+      ],
+      "sources": [
+        {
+          "book": "ogvr-24-25",
+          "page": 1,
+          "passage_index_in_book": 22
+        }
+      ]
+    }
+  },
+  {
+    "book_tag": "ogvr-24-25",
+    "book_pdf": "GMAT verbal review 24-25.pdf",
+    "global_number": 139,
+    "search_hint": "139.",
+    "stem_was_rewritten": true,
+    "has_roman_options": true,
+    "question": {
+      "id": "q_4c13be721263",
+      "passage_id": "p_7611eacb4f93",
+      "position_in_passage": 3,
+      "book_question_number": 139,
+      "question_text": "It can be inferred from the passage that application of “other mandates” (see paragraph 2) would be unlikely to result in an outcome satisfactory to the female employees in which of the following situations?",
+      "question_text_verbatim": "It can be inferred from the passage that application of “other mandates” (see line 22) would be unlikely to result in an outcome satisfactory to the female employees in which of the following situations?",
+      "roman_options": [
+        {
+          "label": "I",
+          "text": "Males employed as long-distance truck drivers for a furniture company make $3.50 more per hour than do females with comparable job experience employed in the same capacity."
+        },
+        {
+          "label": "II",
+          "text": "Women working in the office of a cement company contend that their jobs are as demanding and valuable as those of the men working outside in the cement factory, but the women are paid much less per hour."
+        },
+        {
+          "label": "III",
+          "text": "A law firm employs both male and female paralegals with the same educational and career backgrounds, but the starting salary for male paralegals is $5,000 more than for female paralegals."
+        }
+      ],
+      "choices": {
+        "A": "I only",
+        "B": "II only",
+        "C": "III only",
+        "D": "I and II only",
+        "E": "I and III only"
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "summary": "The question requires applying the information supplied by the passage to hypothetical scenarios. The passage states that the “other mandates” referred to in line 22 of the text— such as the Equal Pay Act of 1963 and Title VII of the Civil Rights Act of 1964—do not address the issue of similarly valuable work in dissimilar jobs. Therefore, it can be inferred that they do address the issue of pay disparities in similar or identical jobs, like the scenarios described in I and III. It would follow that the female employees described in scenarios I and III would be more likely to be satisfied with the results of applying those mandates, and only the female employees described in scenario II—who seek to correct pay inequities across dissimilar but equally demanding jobs—would likely be dissatisfied.",
+        "A": "The male and female employees in scenario I are performing identical work with comparable experience but receiving unequal pay—a situation that the passage implies “other mandates” can address adequately.",
+        "B": "Correct. The male and female employees in scenario II are performing different but equally demanding jobs—exactly the situation that the passage suggests the “other mandates” referred to in line 22 of the text do not address. Therefore, the female employees in this scenario are likely to find the application of such other mandates unsatisfying.",
+        "C": "The male and female employees in scenario III are performing identical work with identical credentials but receiving unequal pay—a situation that the passage implies “other mandates” can address satisfactorily.",
+        "D": "As discussed above, the female employees in scenario II are likely to be dissatisfied by the application of “other mandates,” but those in scenario I are more likely to be satisfied.",
+        "E": "As discussed above, the female employees in scenarios I and III are most likely to find that the “other mandates” are sufficient to address their situations."
+      },
+      "tags": [
+        "ogvr-24-25",
+        "reading_comprehension",
+        "hard",
+        "inference"
+      ],
+      "source": {
+        "book": "ogvr-24-25",
+        "page": 1
+      }
+    },
+    "passage": {
+      "id": "p_7611eacb4f93",
+      "paragraphs": [
+        "Comparable worth, as a standard applied to eliminate inequities in pay, insists that the values of certain tasks performed in dissimilar jobs can be compared. In the last decade, this approach has become a critical social policy issue, as large numbers of private-sector firms and industries as well as federal, state, and local governmental entities have adopted comparable worth policies or begun to consider doing so.",
+        "This widespread institutional awareness of comparable worth indicates increased public awareness that pay inequities—that is, situations in which pay is not “fair” because it does not reflect the true value of a job— exist in the labor market. However, the question still remains: have the gains already made in pay equity under comparable worth principles been of a precedent- setting nature, or are they mostly transitory, a function of concessions made by employers to mislead female employees into believing that they have made long-term pay equity gains? Comparable worth pay adjustments are indeed precedent-setting. Because of the principles driving them, other mandates that can be applied to reduce or eliminate unjustified pay gaps between male and female workers have not remedied perceived pay inequities satisfactorily for the litigants in cases in which men and women hold different jobs. But whenever comparable worth principles are applied to pay schedules, perceived unjustified pay differences are eliminated. In this sense, then, comparable worth is more comprehensive than other mandates, such as the Equal Pay Act of 1963 and Title VII of the",
+        "Civil Rights Act of 1964. Neither compares tasks in dissimilar jobs (that is, jobs across occupational categories) in an effort to determine whether or not what is necessary to perform these tasks—know-how, problem-solving, and accountability—can be quantified in terms of its dollar value to the employer.",
+        "Comparable worth, on the other hand, takes as its premise that certain tasks in dissimilar jobs may require a similar amount of training, effort, and skill; may carry similar responsibility; may be carried on in an environment having a similar impact upon the worker; and may have a similar dollar value to the employer."
+      ],
+      "intro_note": null,
+      "line_to_paragraph": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 2,
+        "11": 2,
+        "12": 2,
+        "13": 2,
+        "14": 2,
+        "15": 2,
+        "16": 2,
+        "17": 2,
+        "18": 2,
+        "19": 2,
+        "20": 2,
+        "21": 2,
+        "22": 2,
+        "23": 2,
+        "24": 2,
+        "25": 2,
+        "26": 2,
+        "27": 2,
+        "28": 2,
+        "29": 2,
+        "30": 2,
+        "31": 2,
+        "32": 2,
+        "33": 2,
+        "34": 2,
+        "35": 3,
+        "36": 3,
+        "37": 3,
+        "38": 3,
+        "39": 3,
+        "40": 4,
+        "41": 4,
+        "42": 4,
+        "43": 4,
+        "44": 4
+      },
+      "tags": [
+        "ogvr-24-25",
+        "hard"
+      ],
+      "sources": [
+        {
+          "book": "ogvr-24-25",
+          "page": 1,
+          "passage_index_in_book": 28
+        }
+      ]
+    }
+  },
+  {
+    "book_tag": "ogvr-25-26",
+    "book_pdf": "GMAT Official Guide Verbal Review 2025-2026.pdf",
+    "global_number": 2,
+    "search_hint": "2.",
+    "stem_was_rewritten": false,
+    "has_roman_options": false,
+    "question": {
+      "id": "q_ee00ce6773fd",
+      "passage_id": "p_5e9ea7cc62b6",
+      "position_in_passage": 2,
+      "book_question_number": 2,
+      "question_text": "Which of the following best describes employee behavior encouraged within learning organizations, as such organizations are described in the passage?",
+      "question_text_verbatim": "Which of the following best describes employee behavior encouraged within learning organizations, as such organizations are described in the passage?",
+      "roman_options": null,
+      "choices": {
+        "A": "Carefully defining one’s job description and taking care to avoid deviations from it",
+        "B": "Designing mentoring programs that train new employees to follow procedures that have been used for many years",
+        "C": "Concentrating one’s efforts on mastering one aspect of a complicated task",
+        "D": "Studying an organizational problem, preparing a report, and submitting it to a corporate leader for approval",
+        "E": "Analyzing a problem related to productivity, making a decision about a solution, and implementing that solution"
+      },
+      "correct_answer": "E",
+      "explanation": {
+        "summary": "The second paragraph of the passage indicates that employees of learning organizations are encouraged to think and act for themselves; they learn new skills and expand their capabilities.",
+        "A": "Avoiding deviations from one’s carefully defined job description would more likely be encouraged in a traditional corporation, as described in the first paragraph, than in a learning organization.",
+        "B": "Any employee training that involves following long-standing procedures would more likely be encouraged in a traditional corporation than a learning organization.",
+        "C": "According to the passage, mastering only one aspect of a task, no matter how complicated, would be insufficient in a learning organization, in which broad patterns of thinking are encouraged.",
+        "D": "As described in the passage, the role of corporate leaders in learning organizations is not, characteristically, to approve employees’ solutions to problems, but rather to enable and empower employees to implement solutions on their own.",
+        "E": "Correct. Employees in learning organizations are expected to act on their own initiative; thus, they would be encouraged to analyze and solve problems on their own, implementing whatever solutions they devised."
+      },
+      "tags": [
+        "ogvr-25-26",
+        "reading_comprehension",
+        "easy",
+        "application"
+      ],
+      "source": {
+        "book": "ogvr-25-26",
+        "page": 1
+      }
+    },
+    "passage": {
+      "id": "p_5e9ea7cc62b6",
+      "paragraphs": [
+        "Human beings, born with a drive to explore and experiment, thrive on learning. Unfortunately, corporations are oriented predominantly toward controlling employees, not fostering their learning. Ironically, this orientation creates the very conditions that predestine employees to mediocre performances. Over time, superior performance requires superior learning, because long-term corporate survival depends on continually exploring new business and organizational opportunities that can create new sources of growth.",
+        "To survive in the future, corporations must become “learning organizations,” enterprises that are constantly able to adapt and expand their capabilities. To accomplish this, corporations must change how they view employees. The traditional view that a single charismatic leader should set the corporation’s direction and make key decisions is rooted in an individualistic worldview. In an increasingly interdependent world, such a view is no longer viable. In learning organizations, thinking and acting are integrated at all job levels. Corporate leadership is shared, and leaders become designers, teachers, and stewards, roles requiring new skills: the ability to build shared vision, to reveal and challenge prevailing mental models, and to foster broader, more integrated patterns of thinking. In short, leaders in learning organizations are responsible for building organizations in which employees are continually learning new skills and expanding their capabilities to shape their future."
+      ],
+      "intro_note": null,
+      "line_to_paragraph": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 2,
+        "16": 2,
+        "17": 2,
+        "18": 2,
+        "19": 2,
+        "20": 2,
+        "21": 2,
+        "22": 2,
+        "23": 2,
+        "24": 2,
+        "25": 2,
+        "26": 2,
+        "27": 2,
+        "28": 2,
+        "29": 2,
+        "30": 2,
+        "31": 2,
+        "32": 2,
+        "33": 2,
+        "34": 2
+      },
+      "tags": [
+        "ogvr-25-26",
+        "easy"
+      ],
+      "sources": [
+        {
+          "book": "ogvr-25-26",
+          "page": 1,
+          "passage_index_in_book": 1
+        }
+      ]
+    }
+  },
+  {
+    "book_tag": "ogvr-25-26",
+    "book_pdf": "GMAT Official Guide Verbal Review 2025-2026.pdf",
+    "global_number": 50,
+    "search_hint": "50.",
+    "stem_was_rewritten": false,
+    "has_roman_options": false,
+    "question": {
+      "id": "q_277fc5d7495c",
+      "passage_id": "p_e42ff121c017",
+      "position_in_passage": 3,
+      "book_question_number": 50,
+      "question_text": "Which of the following best describes the function of the last sentence of the passage?",
+      "question_text_verbatim": "Which of the following best describes the function of the last sentence of the passage?",
+      "roman_options": null,
+      "choices": {
+        "A": "It points out that the events described in the passage may be atypical.",
+        "B": "It alludes to the fact that there is disagreement in the scientific community over the importance of the Ordovician radiation.",
+        "C": "It concludes that the evidence presented in the passage is insufficient to support the proposed hypothesis because it comes from a limited geographic area.",
+        "D": "It warns the reader against seeing a connection between the biological and geologic changes described in the passage.",
+        "E": "It alerts the reader that current knowledge cannot completely explain the relationship suggested by the evidence presented in the passage."
+      },
+      "correct_answer": "E",
+      "explanation": {
+        "summary": "The last sentence of the passage functions primarily to indicate that, though certain evidence from the geologic record suggests a possible cause of the Ordovician radiation, the current level of knowledge regarding the relationship between environmental factors and that radiation is not sufficient for a full understanding of that relationship.",
+        "A": "Although there may be certain geologic or evolutionary aspects of the Ordovician period that are atypical, the final sentence of the passage does not address them.",
+        "B": "Neither the final sentence nor the rest of the passage addresses any disagreements within the scientific community.",
+        "C": "Although the final sentence of the passage does indicate that current understanding of the relationship between the environmental factors discussed and the Ordovician radiation is incomplete, it does not indicate that it is because the evidence comes from a limited geographic area that the evidence is insufficient.",
+        "D": "The last sentence does not advise against seeing a connection between the biological and geologic changes discussed; it merely advises that such a connection is not yet fully understood.",
+        "E": "Correct. The last sentence indicates to the reader that current knowledge is insufficient for fully explaining the relationships among the evidence provided in the passage regarding geologic, ecological, and evolutionary changes."
+      },
+      "tags": [
+        "ogvr-25-26",
+        "reading_comprehension",
+        "medium",
+        "evaluation"
+      ],
+      "source": {
+        "book": "ogvr-25-26",
+        "page": 1
+      }
+    },
+    "passage": {
+      "id": "p_e42ff121c017",
+      "paragraphs": [
+        "The dry mountain ranges of the western United",
+        "States contain rocks dating back 440 to 510 million years, to the Ordovician period, and teeming with evidence of tropical marine life. This rock record provides clues about one of the most significant radiations (periods when existing life-forms gave rise to variations that would eventually evolve into entirely new species) in the history of marine invertebrates.",
+        "During this radiation the number of marine biological families increased greatly, and these families included species that would dominate the marine ecosystems of the area for the next 215 million years. Although the radiation spanned tens of millions of years, major changes in many species occurred during a geologically short time span within the radiation and, furthermore, appear to have occurred worldwide, suggesting that external events were major factors in the radiation. In fact, there is evidence of major ecological and geological changes during this period: the sea level dropped drastically and mountain ranges were formed. In this instance, rather than leading to large-scale extinctions, these kinds of environmental changes may have resulted in an enriched pattern of habitats and nutrients, which in turn gave rise to the Ordovician radiation. However, the actual relationship between these environmental factors and the diversification of life-forms is not yet fully understood."
+      ],
+      "intro_note": null,
+      "line_to_paragraph": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 2,
+        "6": 2,
+        "7": 2,
+        "8": 2,
+        "9": 2,
+        "10": 3,
+        "11": 3,
+        "12": 3,
+        "13": 3,
+        "14": 3,
+        "15": 3,
+        "16": 3,
+        "17": 3,
+        "18": 3,
+        "19": 3,
+        "20": 3,
+        "21": 3,
+        "22": 3,
+        "23": 3,
+        "24": 3,
+        "25": 3,
+        "26": 3,
+        "27": 3,
+        "28": 3,
+        "29": 3
+      },
+      "tags": [
+        "ogvr-25-26",
+        "medium"
+      ],
+      "sources": [
+        {
+          "book": "ogvr-25-26",
+          "page": 1,
+          "passage_index_in_book": 11
+        }
+      ]
+    }
+  },
+  {
+    "book_tag": "ogvr-25-26",
+    "book_pdf": "GMAT Official Guide Verbal Review 2025-2026.pdf",
+    "global_number": 110,
+    "search_hint": "110.",
+    "stem_was_rewritten": false,
+    "has_roman_options": false,
+    "question": {
+      "id": "q_3da5568222e3",
+      "passage_id": "p_210f17056916",
+      "position_in_passage": 1,
+      "book_question_number": 110,
+      "question_text": "According to the passage, conventional spiral galaxies differ from low- surface-brightness galaxies in which of the following ways?",
+      "question_text_verbatim": "According to the passage, conventional spiral galaxies differ from low- surface-brightness galaxies in which of the following ways?",
+      "roman_options": null,
+      "choices": {
+        "A": "They have fewer stars than do low-surface-brightness galaxies.",
+        "B": "They evolve more quickly than low-surface-brightness galaxies.",
+        "C": "They are more diffuse than low-surface-brightness galaxies.",
+        "D": "They contain less helium than do low-surface-brightness galaxies.",
+        "E": "They are larger than low-surface-brightness galaxies."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "summary": "This question requires recognizing information that is provided in the passage. The first paragraph describes and compares two types of galaxies: conventional galaxies and dim, or low-surface-brightness, galaxies. It states that dim galaxies have the same approximate number of stars as a common type of conventional galaxy but tend to be larger and more diffuse because their mass is spread over wider areas (lines 4-10). The passage also indicates that dim galaxies take longer than conventional galaxies to convert their primordial gases into stars, meaning that dim galaxies evolve much more slowly than conventional galaxies (lines 10-14), which entails that conventional galaxies evolve more quickly than dim galaxies.",
+        "A": "The passage states that dim galaxies have approximately the same numbers of stars as a common type of conventional galaxy.",
+        "B": "Correct. The passage indicates that dim galaxies evolve much more slowly than conventional galaxies, which entails that conventional galaxies evolve more quickly.",
+        "C": "The passage states that dim galaxies are more spread out, and therefore more diffuse, than conventional galaxies.",
+        "D": "The passage does not mention the relative amounts of helium in the two types of galaxies under discussion.",
+        "E": "The passage states that dim galaxies tend to be much larger than conventional galaxies."
+      },
+      "tags": [
+        "ogvr-25-26",
+        "reading_comprehension",
+        "hard",
+        "supporting_idea"
+      ],
+      "source": {
+        "book": "ogvr-25-26",
+        "page": 1
+      }
+    },
+    "passage": {
+      "id": "p_210f17056916",
+      "paragraphs": [
+        "In addition to conventional galaxies, the universe contains very dim galaxies that until recently went unnoticed by astronomers. Possibly as numerous as conventional galaxies, these galaxies have the same general shape and even the same approximate number of stars as a common type of conventional galaxy, the spiral, but tend to be much larger. Because these galaxies’ mass is spread out over larger areas, they have far fewer stars per unit volume than do conventional galaxies. Apparently these low-surface-brightness galaxies, as they are called, take much longer than conventional galaxies to condense their primordial gas and convert it to stars—that is, they evolve much more slowly. These galaxies may constitute an answer to the long-standing puzzle of the missing baryonic mass in the universe. Baryons—subatomic particles that are generally protons or neutrons—are the source of stellar, and therefore galactic, luminosity, and so their numbers can be estimated based on how luminous galaxies are. However, the amount of helium in the universe, as measured by spectroscopy, suggests that there are far more baryons in the universe than estimates based on galactic luminosity indicate. Astronomers have long speculated that the missing baryonic mass might eventually be discovered in intergalactic space or as some large population of galaxies that are difficult to detect."
+      ],
+      "intro_note": null,
+      "line_to_paragraph": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1
+      },
+      "tags": [
+        "ogvr-25-26",
+        "hard"
+      ],
+      "sources": [
+        {
+          "book": "ogvr-25-26",
+          "page": 1,
+          "passage_index_in_book": 25
+        }
+      ]
+    }
+  },
+  {
+    "book_tag": "ogvr-25-26",
+    "book_pdf": "GMAT Official Guide Verbal Review 2025-2026.pdf",
+    "global_number": 116,
+    "search_hint": "116.",
+    "stem_was_rewritten": false,
+    "has_roman_options": false,
+    "question": {
+      "id": "q_202a8e74ecff",
+      "passage_id": "p_210f17056916",
+      "position_in_passage": 7,
+      "book_question_number": 116,
+      "question_text": "The primary purpose of the passage is to",
+      "question_text_verbatim": "The primary purpose of the passage is to",
+      "roman_options": null,
+      "choices": {
+        "A": "describe a phenomenon and consider its scientific significance",
+        "B": "contrast two phenomena and discuss a puzzling difference between them",
+        "C": "identify a newly discovered phenomenon and explain its origins",
+        "D": "compare two classes of objects and discuss the physical properties of each",
+        "E": "discuss a discovery and point out its inconsistency with existing theory"
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "summary": "This question requires understanding, in broad terms, the purpose of the passage as a whole. The first paragraph describes a phenomenon: the discovery of dim galaxies and some of their general attributes. The second paragraph describes how this discovery may help astronomers to solve a long-standing puzzle about the baryonic mass of the universe.",
+        "A": "Correct. The passage describes the phenomenon of dim galaxies and describes their significance in solving the longstanding puzzle of the missing baryonic mass in the universe.",
+        "B": "Although the passage discusses the puzzling difference between the two estimates of baryonic mass, this answer choice does not account for the broader topic of dim galaxies.",
+        "C": "While the passage identifies the newly discovered phenomenon of dim galaxies, it does not offer a significant explanation for these galaxies’ origins.",
+        "D": "Although the passage compares dim and conventional galaxies in the first paragraph, this answer choice does not account for the important detail that dim galaxies may help solve a long-standing puzzle.",
+        "E": "The discovery of dim galaxies discussed in the passage is not said to be inconsistent with any existing scientific theory."
+      },
+      "tags": [
+        "ogvr-25-26",
+        "reading_comprehension",
+        "hard",
+        "main_idea"
+      ],
+      "source": {
+        "book": "ogvr-25-26",
+        "page": 1
+      }
+    },
+    "passage": {
+      "id": "p_210f17056916",
+      "paragraphs": [
+        "In addition to conventional galaxies, the universe contains very dim galaxies that until recently went unnoticed by astronomers. Possibly as numerous as conventional galaxies, these galaxies have the same general shape and even the same approximate number of stars as a common type of conventional galaxy, the spiral, but tend to be much larger. Because these galaxies’ mass is spread out over larger areas, they have far fewer stars per unit volume than do conventional galaxies. Apparently these low-surface-brightness galaxies, as they are called, take much longer than conventional galaxies to condense their primordial gas and convert it to stars—that is, they evolve much more slowly. These galaxies may constitute an answer to the long-standing puzzle of the missing baryonic mass in the universe. Baryons—subatomic particles that are generally protons or neutrons—are the source of stellar, and therefore galactic, luminosity, and so their numbers can be estimated based on how luminous galaxies are. However, the amount of helium in the universe, as measured by spectroscopy, suggests that there are far more baryons in the universe than estimates based on galactic luminosity indicate. Astronomers have long speculated that the missing baryonic mass might eventually be discovered in intergalactic space or as some large population of galaxies that are difficult to detect."
+      ],
+      "intro_note": null,
+      "line_to_paragraph": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1
+      },
+      "tags": [
+        "ogvr-25-26",
+        "hard"
+      ],
+      "sources": [
+        {
+          "book": "ogvr-25-26",
+          "page": 1,
+          "passage_index_in_book": 25
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,9 @@
+[project]
+name = "gmat-extract"
+version = "0.1.0"
+description = "Deterministic GMAT OG question extractor + verifier"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"

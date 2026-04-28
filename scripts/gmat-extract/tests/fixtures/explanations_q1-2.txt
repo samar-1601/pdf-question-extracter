@@ -1,0 +1,95 @@
+139. C
+140. E
+141. B
+142. B
+143. D
+
+4.6 Answer Explanations: Reading
+Comprehension
+The following discussion of Reading Comprehension is intended to
+familiarize you with the most efficient and effective approaches to the
+kinds of problems common to Reading Comprehension. The particular
+questions in this chapter are generally representative of the kinds of
+Reading Comprehension questions you will encounter on the GMAT
+exam. Remember that it is the problem-solving strategy that is
+important, not the specific details of a particular question.
+Questions 1 to 47 — Difficulty: Easy
+Questions 1–4 refer to the passage on page 52.
+
+  1. According to the passage, traditional corporate leaders differ from
+     leaders in learning organizations in that the former
+         A. encourage employees to concentrate on developing a wide range
+            of skills
+         B. enable employees to recognize and confront dominant corporate
+            models and to develop alternative models
+         C. make important policy decisions alone and then require
+            employees in the corporation to abide by those decisions
+         D. instill confidence in employees because of their willingness to
+            make risky decisions and accept their consequences
+         E. are concerned with offering employees frequent advice and career
+            guidance
+  Supporting Idea
+  This question requires understanding of the contrast the passage draws
+  between leaders of traditional corporations and leaders of learning
+  organizations. According to the second paragraph, the former are
+  traditionally charismatic leaders who set policy and make decisions,
+  while the latter foster integrated thinking at all levels of the
+  organization.
+    A. According to the passage, it is leaders in learning organizations,
+       not traditional corporate leaders, who encourage the development
+       of a wide range of skills.
+    B. Leaders in learning organizations are those who want their
+       employees to challenge dominant models.
+    C. Correct. The second paragraph states that traditional corporate
+       leaders are individualistic; they alone set the corporation’s
+       direction and make key decisions.
+    D. The passage does not address the question of whether traditional
+       corporate leaders instill confidence in employees. In fact, the first
+       paragraph suggests that they may not; rather, they might come
+       across as objectionably controlling.
+    E. The passage suggests that advice and guidance are more likely to
+       be offered by leaders of learning organizations than by leaders of
+       traditional corporations.
+  The correct answer is C.
+2. Which of the following best describes employee behavior encouraged
+   within learning organizations, as such organizations are described in
+   the passage?
+    A. Carefully defining one’s job description and taking care to avoid
+       deviations from it
+    B. Designing mentoring programs that train new employees to
+       follow procedures that have been used for many years
+    C. Concentrating one’s efforts on mastering one aspect of a
+       complicated task
+    D. Studying an organizational problem, preparing a report, and
+       submitting it to a corporate leader for approval
+    E. Analyzing a problem related to productivity, making a decision
+       about a solution, and implementing that solution
+  Application
+  The second paragraph of the passage indicates that employees of
+  learning organizations are encouraged to think and act for themselves;
+  they learn new skills and expand their capabilities.
+    A. Avoiding deviations from one’s carefully defined job description
+       would more likely be encouraged in a traditional corporation, as
+       described in the first paragraph, than in a learning organization.
+    B. Any employee training that involves following long-standing
+       procedures would more likely be encouraged in a traditional
+       corporation than a learning organization.
+    C. According to the passage, mastering only one aspect of a task, no
+       matter how complicated, would be insufficient in a learning
+       organization, in which broad patterns of thinking are encouraged.
+    D. As described in the passage, the role of corporate leaders in
+       learning organizations is not, characteristically, to approve
+       employees’ solutions to problems, but rather to enable and
+       empower employees to implement solutions on their own.
+    E. Correct. Employees in learning organizations are expected to act
+       on their own initiative; thus, they would be encouraged to analyze
+       and solve problems on their own, implementing whatever
+       solutions they devised.
+  The correct answer is E.
+3. According to the author of the passage, corporate leaders of the future
+   should do which of the following?
+    A. They should encourage employees to put long-term goals ahead
+       of short-term profits.
+    B. They should exercise more control over employees in order to
+       constrain production costs.
+
