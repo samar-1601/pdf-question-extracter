@@ -38,6 +38,7 @@ class _PassageBuilder:
     paragraphs: list[str] = field(default_factory=list)
     line_to_paragraph: dict[int, int] = field(default_factory=dict)
     body_indent: int | None = None
+    first_indent: int | None = None
     current_paragraph: list[str] = field(default_factory=list)
     page: int = 0
 
@@ -45,13 +46,25 @@ class _PassageBuilder:
         text = raw.strip()
         if not text:
             return
-        if line_marker is not None:
-            self.line_to_paragraph[line_marker] = max(1, len(self.paragraphs) + 1)
-        if self.body_indent is None:
-            self.body_indent = leading_spaces
+        # First line of the passage: stash its indent as the paragraph indent of
+        # the first paragraph, but don't lock body_indent yet — we need a body
+        # (continuation) line to know the *body* indent (typically 3 less than
+        # the paragraph indent for OG passages).
+        if self.first_indent is None:
+            self.first_indent = leading_spaces
             self.current_paragraph.append(text)
             self.line_to_paragraph.setdefault(1, 1)
+            if line_marker is not None:
+                self.line_to_paragraph[line_marker] = 1
             return
+        # Second line: lock body_indent. If it's less indented than the first
+        # line, this is a body-of-paragraph continuation and its column is the
+        # body indent. Otherwise the first line was already body-aligned.
+        if self.body_indent is None:
+            self.body_indent = (
+                leading_spaces if leading_spaces < self.first_indent
+                else self.first_indent
+            )
         is_break = (
             leading_spaces - self.body_indent >= 3
             and (text[:1].isupper() or text[:1] in "“\"‘'")
@@ -61,6 +74,11 @@ class _PassageBuilder:
             self.current_paragraph = [text]
         else:
             self.current_paragraph.append(text)
+        # Set line_to_paragraph AFTER we've decided whether this line broke a
+        # paragraph — so a marker line that coincides with a new paragraph maps
+        # to the new paragraph, not the old one.
+        if line_marker is not None:
+            self.line_to_paragraph[line_marker] = len(self.paragraphs) + 1
 
     def finalize(self) -> tuple[list[str], dict[int, int]]:
         if self.current_paragraph:
@@ -224,8 +242,12 @@ def parse(text: str, page_offset: int = 1) -> tuple[list[RawPassage], list[RawQu
             tail = raw_line[m.end():]
             stripped_tail = tail.strip()
             if stripped_tail:
-                tail_indent = len(raw_line) - len(raw_line.lstrip(" "))
-                passage_builder.push_line(stripped_tail, tail_indent, None)
+                # Content column = end of "Line" + leading whitespace of tail.
+                # Using raw_line's leading spaces would point at column 0 of
+                # "Line", which is *less* indented than body lines — breaking
+                # the indent-shift heuristic.
+                content_col = m.end() + (len(tail) - len(tail.lstrip(" ")))
+                passage_builder.push_line(stripped_tail, content_col, None)
             state = "IN_PASSAGE"
             continue
 
@@ -239,8 +261,13 @@ def parse(text: str, page_offset: int = 1) -> tuple[list[RawPassage], list[RawQu
             if m:
                 line_no = int(m.group(1))
                 stripped = raw_line[m.end():]
-                leading_spaces = len(raw_line) - len(raw_line.lstrip(" "))
-                passage_builder.push_line(stripped, leading_spaces, line_no)
+                # The line_marker regex ends with `\s*`, so m.end() is exactly
+                # the column of the first non-space char of the content. That
+                # is what should be compared against body_indent — not the raw
+                # whitespace before the marker (which sits at col 6 regardless
+                # of where the content starts).
+                content_col = m.end()
+                passage_builder.push_line(stripped, content_col, line_no)
             else:
                 leading_spaces = len(raw_line) - len(raw_line.lstrip(" "))
                 passage_builder.push_line(raw_line, leading_spaces, None)

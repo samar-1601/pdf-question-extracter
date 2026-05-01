@@ -203,6 +203,12 @@ pre {
   border: 1px solid rgba(251, 146, 60, 0.4);
 }
 
+.flag.review {
+  background: rgba(220, 38, 38, 0.18);
+  color: #fca5a5;
+  border: 1px solid rgba(220, 38, 38, 0.4);
+}
+
 .glossary-btn {
   display: block;
   margin: 12px;
@@ -348,6 +354,47 @@ pre {
   background: var(--panel-2);
   display: flex;
   flex-direction: column;
+  gap: 8px;
+}
+
+.block-details {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--panel);
+  flex-shrink: 0;
+}
+
+.block-details > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+  padding: 10px 14px;
+  list-style: none;
+  user-select: none;
+}
+
+.block-details > summary::marker,
+.block-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.block-details > summary::before {
+  content: "▸ ";
+  color: var(--muted);
+  display: inline-block;
+  width: 14px;
+}
+
+.block-details[open] > summary::before {
+  content: "▾ ";
+}
+
+.block-details > .json-block {
+  border: none;
+  border-top: 1px solid var(--border);
+  border-radius: 0 0 6px 6px;
+  flex: 0 0 auto;
+  max-height: 60vh;
 }
 
 .panel-title {

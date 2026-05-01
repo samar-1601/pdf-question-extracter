@@ -1,0 +1,54 @@
+4.4 Practice Questions: Reading
+Comprehension
+      Questions 11 to 16 — Difficulty: Easy
+      Line         In 1971 researchers hoping to predict earthquakes
+                in the short term by identifying precursory phenomena
+                (those that occur a few days before large quakes
+                but not otherwise) turned their attention to changes
+      (5)       in seismic waves that had been detected prior to
+                earthquakes. An explanation for such changes was
+                offered by “dilatancy theory,” based on a well-known
+                phenomenon observed in rocks in the laboratory:
+                as stress builds, microfractures in rock close,
+      (10)      decreasing the rock’s volume. But as stress
+                continues to increase, the rock begins to crack and
+                expand in volume, allowing groundwater to seep in,
+                weakening the rock. According to this theory, such
+                effects could lead to several precursory phenomena in
+      (15)      the field, including a change in the velocity of seismic
+                waves, and an increase in small, nearby tremors.
+                   Researchers initially reported success in identifying
+                these possible precursors, but subsequent analyses
+                of their data proved disheartening. Seismic waves
+      (20)      with unusual velocities were recorded before some
+                earthquakes, but while the historical record confirms
+                that most large earthquakes are preceded by minor
+                tremors, these foreshocks indicate nothing about
+                the magnitude of an impending quake and are
+      (25)      indistinguishable from other minor tremors that occur
+                without large earthquakes.
+                   In the 1980s, some researchers turned their
+                efforts from short-term to long-term prediction.
+                Noting that earthquakes tend to occur repeatedly in
+      (30)      certain regions, Lindh and Baker attempted to identify
+                patterns of recurrence, or earthquake cycles, on which
+                to base predictions. In a study of earthquake-prone
+                sites along the San Andreas Fault, they determined
+                that quakes occurred at intervals of approximately 22
+      (35)      years near one site and concluded that there was a
+                95 percent probability of an earthquake in that area
+                by 1992. The earthquake did not occur within the time
+                frame predicted, however.
+                   Evidence against the kind of regular
+      (40)      earthquake cycles that Lindh and Baker tried
+                to establish has come from a relatively new
+                field, paleoseismology. Paleoseismologists
+                have unearthed and dated geological features
+                such as fault scarps that were caused by
+      (45)      earthquakes thousands of years ago. They have
+                determined that the average interval between ten
+                earthquakes that took place at one site along the
+                San Andreas Fault in the past two millennia was
+                132 years, but individual intervals ranged greatly,
+      (50)      from 44 to 332 years.
+      Questions 11–16 refer to the passage.

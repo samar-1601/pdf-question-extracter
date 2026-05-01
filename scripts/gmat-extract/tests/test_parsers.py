@@ -166,6 +166,68 @@ def test_rc_answer_key_skips_toc():
     assert answers == {1: "C", 2: "E", 3: "D", 4: "E", 5: "A"}
 
 
+def test_passage_break_at_line_marker():
+    """Dim galaxies passage: paragraph 2 begins on a line that also carries
+    line marker (15). The parser must register the break (paragraph_count==2)
+    and map line 15 to paragraph 2, not paragraph 1."""
+    text = fx("passage_dim_galaxies_marker_break.txt")
+    passages, _ = rc_questions.parse(text, page_offset=1)
+    assert len(passages) == 1
+    p = passages[0]
+    assert len(p.paragraphs) == 2, (
+        f"expected 2 paragraphs, got {len(p.paragraphs)}: "
+        f"{[par[:60] for par in p.paragraphs]}"
+    )
+    assert p.paragraphs[0].startswith("In addition to conventional galaxies")
+    assert p.paragraphs[0].rstrip().endswith("evolve much more slowly.")
+    assert p.paragraphs[1].startswith("These galaxies may constitute")
+    assert p.line_to_paragraph[14] == 1
+    assert p.line_to_paragraph[15] == 2, (
+        f"line 15 should map to paragraph 2, got {p.line_to_paragraph[15]}"
+    )
+
+
+def test_no_midsentence_break_san_andreas():
+    """San Andreas passage: 4 paragraphs in the printed book. The string
+    'along the San Andreas Fault' (which spans a line wrap and starts a new
+    pdftotext line with a capital letter) must NOT trigger a paragraph
+    break — both halves belong to the same (final) paragraph."""
+    text = fx("passage_san_andreas_no_false_break.txt")
+    passages, _ = rc_questions.parse(text, page_offset=1)
+    assert len(passages) == 1
+    p = passages[0]
+    assert len(p.paragraphs) == 4, (
+        f"expected 4 paragraphs, got {len(p.paragraphs)}: "
+        f"{[par[:60] for par in p.paragraphs]}"
+    )
+    full_para_4 = p.paragraphs[3]
+    assert "along the San Andreas Fault" in full_para_4, (
+        "expected last paragraph to contain 'along the San Andreas Fault' as "
+        f"one continuous string, got: {full_para_4!r}"
+    )
+
+
+def test_no_midsentence_break_title_vii():
+    """Comparable-worth passage: 3 paragraphs. The string
+    'Title VII of the Civil Rights Act of 1964' wraps across pdftotext lines
+    where the continuation ('Civil Rights Act...') starts with a capital — this
+    must NOT trigger a paragraph break."""
+    text = fx("passage_title_vii_no_false_break.txt")
+    passages, _ = rc_questions.parse(text, page_offset=1)
+    assert len(passages) == 1
+    p = passages[0]
+    assert len(p.paragraphs) == 3, (
+        f"expected 3 paragraphs, got {len(p.paragraphs)}: "
+        f"{[par[:60] for par in p.paragraphs]}"
+    )
+    full_para_3 = p.paragraphs[2]
+    assert "Title VII of the Civil Rights Act of 1964" in full_para_3, (
+        "expected paragraph 3 to contain "
+        "'Title VII of the Civil Rights Act of 1964' as one continuous "
+        f"string, got: {full_para_3!r}"
+    )
+
+
 def test_rc_explanations_stops_at_4_7():
     """Explanations parser must stop at §4.7 (Critical Reasoning practice
     questions) — otherwise it ingests CR question stems as RC explanations."""

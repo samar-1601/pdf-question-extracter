@@ -28,27 +28,31 @@ const FIELD_GLOSSARY = [
   },
   {
     name: "passage_id",
-    desc: "ID of the reading-comprehension passage this question belongs to. Multiple questions can share one passage.",
+    desc: "ID of the reading-comprehension passage this question belongs to. Multiple questions share one passage.",
   },
   {
     name: "position_in_passage",
-    desc: "1-based index of this question within its passage (most passages have 3–4 questions).",
+    desc: "1-based index of this question within its passage, contiguous (Q1, Q2, Q3 …). Distinct from book_question_number.",
   },
   {
     name: "book_question_number",
     desc: "The number printed in the PDF (1, 2, 3 … 140). Use this to Cmd+F the question in the source PDF.",
   },
   {
+    name: "difficulty",
+    desc: "easy / medium / hard. Top-level field, also duplicated inside `tags` for backward compatibility.",
+  },
+  {
     name: "question_text",
-    desc: "The display-ready question. Any 'line N' / 'lines N–M' references in the original have been rewritten to 'paragraph N' / 'paragraphs N–M' using the passage's line→paragraph map. Safer for downstream rendering since paragraphs survive reflow but raw line numbers don't.",
+    desc: "Display-ready stem. (1) line-N references rewritten to paragraph-N references using the passage's line→paragraph map. (2) If the question has roman_options, the I./II./III. items are appended at the end so the stem is self-contained for the DB (which only stores A–E).",
   },
   {
     name: "question_text_verbatim",
-    desc: "The exact stem text as printed in the PDF, before line-reference rewriting. Kept around so we can audit the rewrite and prove the extractor didn't fabricate text.",
+    desc: "The exact stem text as printed in the PDF, before line-ref rewriting and before roman-options embedding. Kept around so we can audit the rewrite and prove the extractor didn't fabricate text.",
   },
   {
     name: "roman_options",
-    desc: "Roman-numeral sub-options (I., II., III. …) that appear inside the stem on some 'which of the following' questions. null when the stem has no sub-list. Only ~1 % of questions use this format.",
+    desc: "Roman-numeral sub-options (I., II., III. …) that appear inside the stem on some 'which of the following' questions. Now also embedded inside `question_text` so downstream code that only reads `question_text` doesn't lose them. null when the stem has no sub-list. Only ~1 % of questions use this format.",
   },
   {
     name: "choices",
@@ -68,7 +72,7 @@ const FIELD_GLOSSARY = [
   },
   {
     name: "tags",
-    desc: "Source-tag (e.g. ogvr-24-25), 'reading_comprehension', difficulty (easy/medium/hard), and the RC category (supporting_idea, inference, evaluation, application, main_idea, logical_structure, …).",
+    desc: "Source-tag (e.g. ogvr-24-25), 'reading_comprehension', difficulty, and the RC category (supporting_idea, inference, evaluation, application, main_idea, logical_structure, …).",
   },
   {
     name: "source",
@@ -82,8 +86,12 @@ const PASSAGE_GLOSSARY = [
     desc: "Hash-based ID derived from the passage's full text. Two reprints of the same passage in different books share this id.",
   },
   {
+    name: "difficulty",
+    desc: "Top-level field, mirrors the band of the questions that reference this passage. Duplicated inside `tags` for backward compatibility.",
+  },
+  {
     name: "paragraphs",
-    desc: "The passage broken into paragraphs. Used by the rewriter to translate 'line N' references into 'paragraph N' references.",
+    desc: "The passage broken into paragraphs, in printed-book order. Used by the rewriter to translate 'line N' references into 'paragraph N' references — and by downstream notes that discuss the function of each paragraph.",
   },
   {
     name: "intro_note",
@@ -103,22 +111,6 @@ const PASSAGE_GLOSSARY = [
   },
 ];
 
-function pickTags(tags) {
-  const difficulty = tags.find((t) => ["easy", "medium", "hard"].includes(t));
-  const category = tags.find(
-    (t) =>
-      ![
-        "easy",
-        "medium",
-        "hard",
-        "reading_comprehension",
-        "ogvr-24-25",
-        "ogvr-25-26",
-      ].includes(t)
-  );
-  return { difficulty, category };
-}
-
 function JsonView({ value }) {
   const text = useMemo(() => JSON.stringify(value, null, 2), [value]);
   return <pre className="json-block">{text}</pre>;
@@ -127,10 +119,11 @@ function JsonView({ value }) {
 function Sidebar({ samples, activeIdx, onSelect, onShowGlossary }) {
   return (
     <nav className="sidebar">
-      <div className="sidebar-title">10 sampled questions</div>
+      <div className="sidebar-title">{samples.length} passage blocks</div>
       <ol className="sidebar-list">
         {samples.map((s, i) => {
-          const { difficulty, category } = pickTags(s.question.tags);
+          const diffs = s.flags.difficulties || [];
+          const npara = s.passage.paragraphs.length;
           return (
             <li
               key={i}
@@ -139,32 +132,45 @@ function Sidebar({ samples, activeIdx, onSelect, onShowGlossary }) {
             >
               <div className="sidebar-row">
                 <span className="badge book">{s.book_tag}</span>
-                <span
-                  className="badge diff"
-                  style={{ background: DIFFICULTY_COLOR[difficulty] }}
-                >
-                  {difficulty}
-                </span>
+                {diffs.map((d) => (
+                  <span
+                    key={d}
+                    className="badge diff"
+                    style={{ background: DIFFICULTY_COLOR[d] || "#475569" }}
+                  >
+                    {d}
+                  </span>
+                ))}
               </div>
               <div className="sidebar-row sidebar-meta">
-                <span className="qnum">Q{s.global_number}</span>
-                <span className="cat">{category}</span>
+                <span className="qnum">
+                  Q{s.first_question_number}-… ({s.questions.length} questions)
+                </span>
+                <span className="cat">{npara} paragraph{npara === 1 ? "" : "s"}</span>
               </div>
               <div className="sidebar-row sidebar-flags">
-                {s.stem_was_rewritten && (
+                {s.flags.has_line_ref_rewrite && (
                   <span
                     className="flag rewrite"
-                    title="question_text differs from question_text_verbatim — 'line N' references rewritten to 'paragraph N' using the passage's line→paragraph map"
+                    title="at least one question's question_text differs from question_text_verbatim — line→paragraph rewrite fired"
                   >
                     line→passage
                   </span>
                 )}
-                {s.has_roman_options && (
+                {s.flags.has_roman_options && (
                   <span
                     className="flag roman"
-                    title="stem contains Roman-numeral sub-options I/II/III"
+                    title="passage has at least one question with roman_options sub-list (I/II/III)"
                   >
                     I·II·III
+                  </span>
+                )}
+                {s.flags.needs_paragraph_review && (
+                  <span
+                    className="flag review"
+                    title="1-paragraph passage — needs visual verification against the printed PDF"
+                  >
+                    review
                   </span>
                 )}
               </div>
@@ -180,43 +186,66 @@ function Sidebar({ samples, activeIdx, onSelect, onShowGlossary }) {
 }
 
 function LeftPanel({ sample }) {
-  const { difficulty, category } = pickTags(sample.question.tags);
+  const { passage, book_pdf, book_tag, questions, flags } = sample;
   return (
     <section className="left-panel">
       <h2 className="panel-title">Source PDF — manual verify</h2>
       <div className="kv">
         <div className="k">PDF file</div>
         <div className="v">
-          <code>{sample.book_pdf}</code>
+          <code>{book_pdf}</code>
         </div>
       </div>
       <div className="kv">
         <div className="k">Book tag</div>
         <div className="v">
-          <code>{sample.book_tag}</code>
+          <code>{book_tag}</code>
         </div>
       </div>
       <div className="kv">
-        <div className="k">Question number in book</div>
+        <div className="k">Question numbers in book</div>
         <div className="v">
-          <span className="big-q">Q{sample.global_number}</span>
-        </div>
-      </div>
-      <div className="kv">
-        <div className="k">Difficulty</div>
-        <div className="v">
-          <span
-            className="badge diff"
-            style={{ background: DIFFICULTY_COLOR[difficulty] }}
-          >
-            {difficulty}
+          <span className="big-q">
+            Q{questions[0]?.book_question_number}–Q
+            {questions[questions.length - 1]?.book_question_number}
+          </span>
+          <span style={{ marginLeft: 8, color: "var(--muted)" }}>
+            ({questions.length} total)
           </span>
         </div>
       </div>
       <div className="kv">
-        <div className="k">Category (RC question type)</div>
+        <div className="k">Difficulty mix</div>
         <div className="v">
-          <code>{category}</code>
+          {(flags.difficulties || []).map((d) => (
+            <span
+              key={d}
+              className="badge diff"
+              style={{
+                background: DIFFICULTY_COLOR[d] || "#475569",
+                marginRight: 4,
+              }}
+            >
+              {d}
+            </span>
+          ))}
+        </div>
+      </div>
+      <div className="kv">
+        <div className="k">Paragraph count</div>
+        <div className="v">
+          <code>{passage.paragraphs.length}</code>
+          {flags.needs_paragraph_review && (
+            <span
+              style={{
+                marginLeft: 8,
+                color: "var(--muted)",
+                fontSize: 12,
+              }}
+            >
+              (1-paragraph — please verify against the printed PDF)
+            </span>
+          )}
         </div>
       </div>
       <div className="kv">
@@ -224,27 +253,33 @@ function LeftPanel({ sample }) {
         <div className="v">
           <ol className="howto">
             <li>
-              Open <code>{sample.book_pdf}</code> in any PDF viewer.
+              Open <code>{book_pdf}</code> in any PDF viewer.
             </li>
             <li>
-              Use <kbd>Cmd</kbd>+<kbd>F</kbd> and search for{" "}
-              <code>{sample.search_hint}</code> in §4.4 (Practice Questions).
+              Use <kbd>Cmd</kbd>+<kbd>F</kbd> to find each question number{" "}
+              (Q{questions[0]?.book_question_number}–Q
+              {questions[questions.length - 1]?.book_question_number}) in §4.4
+              (Practice Questions).
             </li>
             <li>
-              Compare the printed question + 5 choices against the JSON on the
+              Compare each printed question + 5 choices against the JSON on the
               right.
             </li>
             <li>
-              For the explanation, search the same number in §4.6 (Answer
+              Compare the rendered passage below against the printed passage —
+              especially the paragraph boundaries.
+            </li>
+            <li>
+              For explanations, search the same number in §4.6 (Answer
               Explanations).
             </li>
           </ol>
         </div>
       </div>
-      <details className="passage-details">
-        <summary>Linked passage (rendered)</summary>
+      <details className="passage-details" open>
+        <summary>Rendered passage ({passage.paragraphs.length} ¶)</summary>
         <div className="passage-body">
-          {sample.passage.paragraphs.map((p, i) => (
+          {passage.paragraphs.map((p, i) => (
             <p key={i} className="passage-para">
               <span className="para-idx">¶{i + 1}</span> {p}
             </p>
@@ -256,28 +291,22 @@ function LeftPanel({ sample }) {
 }
 
 function RightPanel({ sample }) {
-  const [tab, setTab] = useState("question");
   return (
     <section className="right-panel">
-      <div className="tab-row">
-        <button
-          className={`tab ${tab === "question" ? "active" : ""}`}
-          onClick={() => setTab("question")}
-        >
-          question.json
-        </button>
-        <button
-          className={`tab ${tab === "passage" ? "active" : ""}`}
-          onClick={() => setTab("passage")}
-        >
-          passage.json
-        </button>
-      </div>
-      {tab === "question" ? (
-        <JsonView value={sample.question} />
-      ) : (
+      <details className="block-details" open>
+        <summary>passage.json</summary>
         <JsonView value={sample.passage} />
-      )}
+      </details>
+      {sample.questions.map((q) => (
+        <details key={q.id} className="block-details">
+          <summary>
+            Q{q.book_question_number} — pos {q.position_in_passage} ·{" "}
+            {q.difficulty}
+            {q.roman_options ? " · I·II·III" : ""}
+          </summary>
+          <JsonView value={q} />
+        </details>
+      ))}
     </section>
   );
 }
@@ -332,11 +361,12 @@ export default function App() {
         <div>
           <div className="app-title">GMAT RC Extraction Visualiser</div>
           <div className="app-sub">
-            Manual spot-check dashboard — 10 diverse questions extracted from
-            two GMAT Verbal Review books. Each entry shows the source PDF +
-            question number on the left, and the structured JSON on the right.
-            Click <em>“What do these field names mean?”</em> in the sidebar
-            for a glossary.
+            Manual spot-check dashboard — {samples.length} passage blocks from
+            two GMAT Verbal Review books. Each block shows the source PDF + the
+            full set of questions for that passage on the left, and the
+            structured JSON (passage + every question) on the right. Click{" "}
+            <em>"What do these field names mean?"</em> in the sidebar for a
+            glossary.
           </div>
         </div>
         <button

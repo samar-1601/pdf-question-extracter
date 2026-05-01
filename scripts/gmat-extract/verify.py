@@ -151,6 +151,9 @@ def rule_check_rewriter(report: Report, q: dict, passage: dict | None) -> None:
     except LineRefMiss as e:
         report.fail("R5", id=q["id"], reason="line_ref_miss", detail=str(e))
         return
+    if q.get("roman_options"):
+        block = "\n".join(f"{it['label']}. {it['text']}" for it in q["roman_options"])
+        recomputed = f"{recomputed}\n\n{block}"
     if recomputed != q["question_text"]:
         report.fail(
             "R5",

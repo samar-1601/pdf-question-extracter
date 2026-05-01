@@ -1,0 +1,296 @@
+# Auto-bootstrapped from data/ogvr-25-26/passages.jsonl
+# Each `needs_review: true` entry must be verified against the printed PDF
+# before this golden becomes authoritative.
+
+- passage_index_in_book: 1
+  passage_id: p_5e9ea7cc62b6
+  paragraph_count: 2
+  paragraphs:
+    - first_50: "Human beings, born with a drive to explore and exp"
+      last_50: "portunities that can create new sources of growth."
+    - first_50: "To survive in the future, corporations must become"
+      last_50: "xpanding their capabilities to shape their future."
+
+- passage_index_in_book: 2
+  passage_id: p_db9225ed8b9f
+  paragraph_count: 1
+  needs_review: true  # 1-paragraph — verify against printed PDF
+  paragraphs:
+    - first_50: "For many years, historians thought that the develo"
+      last_50: "ening the harsh edges of laissez-faire capitalism."
+
+- passage_index_in_book: 3
+  passage_id: p_be5385d7be78
+  paragraph_count: 1
+  needs_review: true  # 1-paragraph — verify against printed PDF
+  paragraphs:
+    - first_50: "Ecoefficiency (measures to minimize environmental "
+      last_50: " radically different products and business models."
+
+- passage_index_in_book: 4
+  passage_id: p_a710477e8d09
+  paragraph_count: 4
+  paragraphs:
+    - first_50: "In 1971 researchers hoping to predict earthquakes "
+      last_50: "c waves, and an increase in small, nearby tremors."
+    - first_50: "Researchers initially reported success in identify"
+      last_50: "inor tremors that occur without large earthquakes."
+    - first_50: "In the 1980s, some researchers turned their effort"
+      last_50: "ot occur within the time frame predicted, however."
+    - first_50: "Evidence against the kind of regular earthquake cy"
+      last_50: "al intervals ranged greatly, from 44 to 332 years."
+
+- passage_index_in_book: 5
+  passage_id: p_dfded5354c3b
+  paragraph_count: 4
+  paragraphs:
+    - first_50: "A key decision required of advertising managers is"
+      last_50: "rtising claims that imply superiority more subtly."
+    - first_50: "One positive aspect of the hard-sell approach is i"
+      last_50: "of resentment, distrust, and counterargumentation."
+    - first_50: "Recent research on consumer memory and judgment su"
+      last_50: "ceived as manipulative or deliberately misleading."
+    - first_50: "Despite these advantages, implicit conclusions may"
+      last_50: "sion but question the validity of their inference."
+
+- passage_index_in_book: 6
+  passage_id: p_914bbe7b8129
+  paragraph_count: 1
+  needs_review: true  # 1-paragraph — verify against printed PDF
+  paragraphs:
+    - first_50: "Suppose we were in a spaceship in free fall, where"
+      last_50: "deduce the restraining force and hence the masses."
+
+- passage_index_in_book: 7
+  passage_id: p_cf1bc8afc9b6
+  paragraph_count: 2
+  paragraphs:
+    - first_50: "The following is based on material written in 1996"
+      last_50: "he following is based on material written in 1996."
+    - first_50: "The Montreal Protocol on Substances that Deplete t"
+      last_50: "a contraband problem second only to illicit drugs."
+
+- passage_index_in_book: 8
+  passage_id: p_43ea65ad5c55
+  paragraph_count: 2
+  paragraphs:
+    - first_50: "Most pre-1990 literature on businesses’ use of inf"
+      last_50: "s of productivity did not reflect the improvement."
+    - first_50: "But some observers questioned why, if IT had confe"
+      last_50: "ey may be, but from complex, intangible resources."
+
+- passage_index_in_book: 9
+  passage_id: p_7f17cc0fdf7e
+  paragraph_count: 4
+  paragraphs:
+    - first_50: "The Black Death, a severe epidemic that ravaged fo"
+      last_50: " Renaissance and subsequent rise of modern Europe."
+    - first_50: "In the 1930s, however, Evgeny Kosminsky and other "
+      last_50: "ng the central role of the Black Death in history."
+    - first_50: "This central role of the Black Death (traditionall"
+      last_50: " and fewer deaths than historians typically claim."
+    - first_50: "Although correctly citing the exacting conditions "
+      last_50: "nts, and the many other animals that carry plague."
+
+- passage_index_in_book: 10
+  passage_id: p_63dcecd5fd32
+  paragraph_count: 4
+  paragraphs:
+    - first_50: "This passage is based on an article written in 200"
+      last_50: "is passage is based on an article written in 2000."
+    - first_50: "The traditional model of employer-employee relatio"
+      last_50: "w the fastest- growing majors in business schools."
+    - first_50: "Several factors have generated movement from the o"
+      last_50: "s, and shortage of funds for employee development."
+    - first_50: "At the same time, a lack of forthrightness on the "
+      last_50: "t will take advantage of you if given the chance.”"
+
+- passage_index_in_book: 11
+  passage_id: p_e42ff121c017
+  paragraph_count: 1
+  needs_review: true  # 1-paragraph — verify against printed PDF
+  paragraphs:
+    - first_50: "The dry mountain ranges of the western United Stat"
+      last_50: "ication of life-forms is not yet fully understood."
+
+- passage_index_in_book: 12
+  passage_id: p_b353b107288d
+  paragraph_count: 2
+  paragraphs:
+    - first_50: "Seventeenth-century philosopher John Locke stated "
+      last_50: "the product’s value as profit is practicing theft."
+    - first_50: "Although human effort is required to produce goods"
+      last_50: "iling for which Locke must bear part of the blame."
+
+- passage_index_in_book: 13
+  passage_id: p_405ba67550bb
+  paragraph_count: 2
+  paragraphs:
+    - first_50: "Exactly when in the early modern era Native Americ"
+      last_50: "ntled and exchanged parts of their ships for furs."
+    - first_50: "By the time Europeans sailing the Atlantic coast o"
+      last_50: "or more than thirty years, perhaps half a century."
+
+- passage_index_in_book: 14
+  passage_id: p_040a87274ded
+  paragraph_count: 2
+  paragraphs:
+    - first_50: "Determining whether a given population of animals "
+      last_50: " in different places are capable of interbreeding."
+    - first_50: "When the biological species concept is difficult t"
+      last_50: "s might reasonably be considered distinct species."
+
+- passage_index_in_book: 15
+  passage_id: p_d13e5bcacf0f
+  paragraph_count: 1
+  needs_review: true  # 1-paragraph — verify against printed PDF
+  paragraphs:
+    - first_50: "Researchers studying how genes control animal beha"
+      last_50: "s are healthy; they simply have different rhythms."
+
+- passage_index_in_book: 16
+  passage_id: p_357e437ef7c2
+  paragraph_count: 2
+  paragraphs:
+    - first_50: "For most species of animals, the number of individ"
+      last_50: " to understanding the relative rarity of tamarins."
+    - first_50: "To emphasize just how anomalously rare tamarins ar"
+      last_50: " seems completely out of proportion to their size."
+
+- passage_index_in_book: 17
+  passage_id: p_6f011e075997
+  paragraph_count: 3
+  paragraphs:
+    - first_50: "According to many analysts, labor-management relat"
+      last_50: " rules, seniority rights, and job classifications."
+    - first_50: "Sophisticated proponents of these new developments"
+      last_50: "tually cut and run, concessions or no concessions."
+    - first_50: "Wage-related concessions have come under particula"
+      last_50: "rd World pay levels—a competition they cannot win."
+
+- passage_index_in_book: 18
+  passage_id: p_f4540bba42f9
+  paragraph_count: 2
+  paragraphs:
+    - first_50: "Historians who study European women of the Renaiss"
+      last_50: "ined within a complex web of social relationships."
+    - first_50: "In her study of the fifteenth-century Florentine w"
+      last_50: "y coincide with the boundaries of the bodily self."
+
+- passage_index_in_book: 19
+  passage_id: p_79cd40d201a3
+  paragraph_count: 3
+  paragraphs:
+    - first_50: "In the fourteenth and fifteenth centuries, many We"
+      last_50: "distinctly hierarchical organizational structures."
+    - first_50: "These communities’ agricultural systems—which were"
+      last_50: "ed foodstuffs, in such apparently communal spaces."
+    - first_50: "Moreover, evidence of specialization in procuring "
+      last_50: "thers from the same sites lack any such materials."
+
+- passage_index_in_book: 20
+  passage_id: p_cdb093d7bc4c
+  paragraph_count: 1
+  needs_review: true  # 1-paragraph — verify against printed PDF
+  paragraphs:
+    - first_50: "In its 1903 decision in the case of Lone Wolf v. H"
+      last_50: "e the empty formality of obtaining tribal consent."
+
+- passage_index_in_book: 21
+  passage_id: p_1aabf8d32ef0
+  paragraph_count: 2
+  paragraphs:
+    - first_50: "Some historians contend that conditions in the Uni"
+      last_50: "ical reality is not reducible to one or the other."
+    - first_50: "Unions faced a choice between either maintaining t"
+      last_50: "to confront contradictions in their own practices."
+
+- passage_index_in_book: 22
+  passage_id: p_2c9bdd1a1481
+  paragraph_count: 2
+  paragraphs:
+    - first_50: "This passage was excerpted from material published"
+      last_50: "age was excerpted from material published in 1993."
+    - first_50: "Like many other industries, the travel industry is"
+      last_50: "s now comprises 32 partners spanning 37 countries."
+
+- passage_index_in_book: 23
+  passage_id: p_d3a6e23142f5
+  paragraph_count: 1
+  needs_review: true  # 1-paragraph — verify against printed PDF
+  paragraphs:
+    - first_50: "Many economists believe that a high rate of busine"
+      last_50: " of businesses to save and invest were restrained."
+
+- passage_index_in_book: 24
+  passage_id: p_a10eaa1e15fa
+  paragraph_count: 1
+  needs_review: true  # 1-paragraph — verify against printed PDF
+  paragraphs:
+    - first_50: "Traditional social science models of class groups "
+      last_50: "nity centered around domesticity and volunteerism."
+
+- passage_index_in_book: 25
+  passage_id: p_210f17056916
+  paragraph_count: 1
+  needs_review: true  # 1-paragraph — verify against printed PDF
+  paragraphs:
+    - first_50: "In addition to conventional galaxies, the universe"
+      last_50: "pulation of galaxies that are difficult to detect."
+
+- passage_index_in_book: 26
+  passage_id: p_4dd751f41d06
+  paragraph_count: 2
+  paragraphs:
+    - first_50: "Antonia Castañeda has utilized scholarship from wo"
+      last_50: "ts and inheritance rights equal to those of males."
+    - first_50: "For Castañeda, the laws explain a stereotypical pl"
+      last_50: "avorably than were others of the same nationality."
+
+- passage_index_in_book: 27
+  passage_id: p_3dc72b745f96
+  paragraph_count: 3
+  paragraphs:
+    - first_50: "This passage is excerpted from material published "
+      last_50: "sage is excerpted from material published in 1997."
+    - first_50: "Scientists have been puzzled by the seeming dispar"
+      last_50: "at global warming models themselves may be flawed."
+    - first_50: "Ben Santer disagrees. Santer contends that, in gen"
+      last_50: "redictions and observed data differ fundamentally."
+
+- passage_index_in_book: 28
+  passage_id: p_2c957859862a
+  paragraph_count: 2
+  paragraphs:
+    - first_50: "Micro-wear patterns found on the teeth of long- ex"
+      last_50: "h are commonly assumed to be frugivorous primates."
+    - first_50: "However, research on the diets of contemporary pri"
+      last_50: "o be expanded to include a much more diverse diet."
+
+- passage_index_in_book: 29
+  passage_id: p_4ae5809e8cc1
+  paragraph_count: 2
+  paragraphs:
+    - first_50: "In current historiography, the picture of a consis"
+      last_50: "raction of the money from his wife’s cheese sales."
+    - first_50: "By focusing on somewhat peripheral operations, mor"
+      last_50: " cases, one or more of these elements was lacking."
+
+- passage_index_in_book: 30
+  passage_id: p_f2a2061e998d
+  paragraph_count: 2
+  paragraphs:
+    - first_50: "The ultimate pendulum clock, indeed the ultimate m"
+      last_50: "rotation were gleaned by the use of Shortt clocks."
+    - first_50: "In 1984, Pierre Boucheron carried out a study of a"
+      last_50: " the clock to gain or lose up to 140 microseconds."
+
+- passage_index_in_book: 31
+  passage_id: p_16996ba2a732
+  paragraph_count: 2
+  paragraphs:
+    - first_50: "Comparable worth, as a standard applied to elimina"
+      last_50: "able worth policies or begun to consider doing so."
+    - first_50: "This widespread institutional awareness of compara"
+      last_50: "d may have a similar dollar value to the employer."
+

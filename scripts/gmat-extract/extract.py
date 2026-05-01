@@ -56,6 +56,13 @@ def pdftotext(pdf: Path, start: int, end: int) -> str:
     return out.stdout
 
 
+def _embed_roman_items(stem: str, items: list[dict[str, str]] | None) -> str:
+    if not items:
+        return stem
+    block = "\n".join(f"{it['label']}. {it['text']}" for it in items)
+    return f"{stem}\n\n{block}"
+
+
 def join(
     raw_passages: list[rc_questions.RawPassage],
     raw_questions: list[rc_questions.RawQuestion],
@@ -74,6 +81,7 @@ def join(
         passage_id_for_index[idx] = pid
         record = {
             "id": pid,
+            "difficulty": p.difficulty or None,
             "paragraphs": p.paragraphs,
             "intro_note": p.intro_note,
             "line_to_paragraph": {str(k): v for k, v in sorted(p.line_to_paragraph.items())},
@@ -122,7 +130,8 @@ def join(
                 "passage_id": pid,
                 "position_in_passage": n_in_passage,
                 "book_question_number": q.global_number,
-                "question_text": stem_rewritten,
+                "difficulty": q.difficulty,
+                "question_text": _embed_roman_items(stem_rewritten, q.stem_items),
                 "question_text_verbatim": q.stem_original,
                 "roman_options": q.stem_items,
                 "choices": q.choices,
