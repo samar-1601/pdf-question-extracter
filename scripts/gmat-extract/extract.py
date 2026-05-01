@@ -155,6 +155,86 @@ def write_jsonl(records: list[dict], path: Path) -> None:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
 
 
+_STANDARD_TAGS = {
+    "reading_comprehension",
+    "easy", "medium", "hard",
+}
+
+
+def _question_type_from_tags(tags: list[str], source_tag: str) -> str | None:
+    """Recover the un-slugified RC category label (e.g. 'Supporting Idea')
+    from the slugged tag list. The category is the only tag that isn't
+    standard or the source-tag."""
+    for t in tags:
+        if t in _STANDARD_TAGS or t == source_tag:
+            continue
+        return " ".join(w.capitalize() for w in t.split("_"))
+    return None
+
+
+def passage_blocks(
+    passages_out: list[dict],
+    questions_out: list[dict],
+    source_tag: str,
+) -> list[dict]:
+    """Combine the per-passage passage record + its questions into the
+    downstream-friendly shape. Every original field is preserved; the
+    sample-shape names (passage_id int, passage_paragraphs, number, options,
+    question_type, rationale, option_explanations) are added on top."""
+    by_pid: dict[str, list[dict]] = {}
+    for q in questions_out:
+        by_pid.setdefault(q["passage_id"], []).append(q)
+
+    blocks: list[dict] = []
+    for p in passages_out:
+        qs = sorted(
+            by_pid.get(p["id"], []),
+            key=lambda r: r["book_question_number"],
+        )
+        new_qs = []
+        for q in qs:
+            ex = q.get("explanation", {}) or {}
+            new_qs.append({
+                # sample-shape:
+                "number": q["book_question_number"],
+                "question_text": q["question_text"],
+                "options": q["choices"],
+                "question_type": _question_type_from_tags(
+                    q.get("tags", []), source_tag
+                ),
+                "rationale": ex.get("summary", ""),
+                "option_explanations": {
+                    letter: ex.get(letter, "") for letter in "ABCDE"
+                },
+                "correct_answer": q["correct_answer"],
+                # extras (kept):
+                "id": q["id"],
+                "position_in_passage": q["position_in_passage"],
+                "difficulty": q.get("difficulty"),
+                "question_text_verbatim": q["question_text_verbatim"],
+                "roman_options": q.get("roman_options"),
+                "tags": q.get("tags", []),
+                "source": q.get("source"),
+            })
+
+        blocks.append({
+            # sample-shape:
+            "passage_id": p["sources"][0]["passage_index_in_book"],
+            "passage_paragraphs": p["paragraphs"],
+            "questions": new_qs,
+            # extras (kept):
+            "id": p["id"],
+            "difficulty": p.get("difficulty"),
+            "intro_note": p.get("intro_note"),
+            "line_to_paragraph": p.get("line_to_paragraph", {}),
+            "tags": p.get("tags", []),
+            "sources": p.get("sources", []),
+            "book_tag": source_tag,
+        })
+
+    return blocks
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--pdf", required=True, type=Path)
@@ -225,6 +305,8 @@ def main(argv: list[str] | None = None) -> int:
     args.output.mkdir(parents=True, exist_ok=True)
     write_jsonl(passages_out, args.output / "passages.jsonl")
     write_jsonl(questions_out, args.output / "questions.jsonl")
+    blocks_out = passage_blocks(passages_out, questions_out, args.source_tag)
+    write_jsonl(blocks_out, args.output / "passage_blocks.jsonl")
     (args.output / "_extract_text").mkdir(exist_ok=True)
     (args.output / "_extract_text" / "questions.txt").write_text(questions_text)
     (args.output / "_extract_text" / "answers.txt").write_text(answers_text)
